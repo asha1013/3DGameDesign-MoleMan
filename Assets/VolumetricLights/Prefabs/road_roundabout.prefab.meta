@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b4f0e7cc4167e474e8dd18fa7536af8b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/Prefabs/road_roundabout.prefab
+  uploadId: 790192

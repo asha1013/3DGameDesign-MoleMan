@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f904cf2705f16a44b85d36a54fb8dbb9, type: 3}
+  m_Name: NormalRoom
+  m_EditorClassIdentifier: 
+  roomPrefabs:
+  - {fileID: 3056980433227486698, guid: d6e6a53acf29d264485ccbbd8607def7, type: 3}
+  - {fileID: 3056980433227486698, guid: 254b69f86d441724782001222adf2e33, type: 3}
+  - {fileID: 3056980433227486698, guid: 44497fdac226ce2499028485c80aa78c, type: 3}
+  - {fileID: 3056980433227486698, guid: 34ee8f26eab376a4bb6186f3d1838d4b, type: 3}
+  - {fileID: 3056980433227486698, guid: c2f075843e147eb409fc6e888c0816a3, type: 3}
+  - {fileID: 3056980433227486698, guid: ef4970e20f464714986656574958a0be, type: 3}
+  - {fileID: 3056980433227486698, guid: 53d3c648bfbebed44aafc1366bef1268, type: 3}
+  - {fileID: 3056980433227486698, guid: 46938a8f28196d54590743d248c47aaa, type: 3}
+  - {fileID: 3056980433227486698, guid: 664f1fde15eb7a444b68ae15ec6fd859, type: 3}
+  - {fileID: 3056980433227486698, guid: 935110888d0c34f42b3f909228a356cf, type: 3}
+  - {fileID: 3056980433227486698, guid: 3f62c84bd19ea0c438384521ef3a3bbc, type: 3}
+  normalRoom: 1
+  defaultRoom: {fileID: 0}
+  startRoom: 0
+  vertOffset: 1
+  keyRoom: 0
+  bossRoom: 0
+  bossPrefabs: []
+  distFromBoss: {x: 0, y: 8}
+  distFromStart: {x: 0, y: 8}
+  possibleSpawns: {x: 0, y: 6}
+  maxConnections: 2
+  minConnections: 0
+  isExtRoom: 0
+  minimapIcon: {fileID: 0}

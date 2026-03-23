@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d891114846ed840ad47e9e32c86fcf, type: 3}
+  m_Name: FrogWeapon
+  m_EditorClassIdentifier: 
+  weaponObj: {fileID: 0}
+  weaponName: 
+  attackType: 0
+  uniqueRanged: 0
+  uniqueMelee: 0
+  hasChargeAttack: 0
+  hasAimAttack: 1
+  projectilePrefab: {fileID: 0}
+  fireRate: 0.5
+  recoil: 0
+  baseDamage: 1
+  fireEmit: 0
+  fireMaterials: []
+  emitIntensity: 5
+  baseRangedStartup: 0.12
+  baseRangedTime: 0.57
+  meleeDamage: 2
+  meleeSpeed: 0.64
+  baseMeleeStartup: 0.27
+  baseMeleeActive: 0.13
+  baseMeleeTime: 0.64
+  projectileSpeed: 10
+  projectileRange: 1
+  knockback: 5
+  travelArc: 0
+  arcHeight: 2
+  arcRange: 10
+  penetration: 0
+  isAOE: 1
+  splashRadius: 2
+  chargeTime: 2
+  damageRange: {x: 10, y: 50}
+  rangeRange: {x: 0.9, y: 1}
+  speedRange: {x: 5, y: 25}
+  chargeEmit: 5
+  chargedFlash: 10
+  chargingClip: {fileID: 0}
+  chargingClipVolume: 1
+  chargedLoop: {fileID: 0}
+  chargedLoopVolume: 1
+  startTime: 0.5
+  aimWeight: 1
+  minPower: 5
+  maxPower: 20
+  powerRampTime: 2
+  aimMat: {fileID: 0}
+  aimEmit: 5
+  weaponAimClip: {fileID: 0}
+  weaponAimClipVolume: 1
+  aimObject: {fileID: 0}

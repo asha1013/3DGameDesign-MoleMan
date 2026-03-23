@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5df381e94848af64d9b6d42f59d437e3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/Prefabs/construction_pylon.prefab
+  uploadId: 790192

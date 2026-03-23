@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 42a7c9ad8a311fa41a8e01b4d2cbc5a2
+timeCreated: 1495952138
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 91686
+  packageName: Stylized Rocks
+  packageVersion: 1.2
+  assetPath: Assets/Rocks/Prefabs/rock_3.prefab
+  uploadId: 718649

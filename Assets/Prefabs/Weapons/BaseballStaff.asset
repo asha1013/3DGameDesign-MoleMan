@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d891114846ed840ad47e9e32c86fcf, type: 3}
+  m_Name: BaseballStaff
+  m_EditorClassIdentifier: 
+  weaponObj: {fileID: 2296970729350661295, guid: 3732319280f98174b95886d8f17e033b, type: 3}
+  weaponName: Baseball Staff
+  attackType: 0
+  uniqueRanged: 0
+  uniqueMelee: 0
+  hasChargeAttack: 1
+  hasAimAttack: 0
+  projectilePrefab: {fileID: 7562811349553579978, guid: a945455a31135a64094a009e1218c2d5, type: 3}
+  overrideProjectileOrigin: 0
+  projectileOriginLocalPosition: {x: 0, y: 0, z: 0}
+  fireRate: 0.5
+  baseDamage: 5
+  fireEmit: 1
+  fireMaterials:
+  - {fileID: 2100000, guid: 0f41c7985ffb95d488cc8400b26f30e6, type: 2}
+  - {fileID: 2100000, guid: 7119cb15d8baf234daa41b8a3127abaf, type: 2}
+  - {fileID: 2100000, guid: 9d41045edef1df3489916df63b2fce0a, type: 2}
+  - {fileID: 2100000, guid: 59040f6ad225b1748843518f9c797e5c, type: 2}
+  emitIntensity: 5
+  baseRangedStartup: 0.12
+  baseRangedTime: 0.57
+  hasShootSFX: 0
+  shootClip: {fileID: 0}
+  shootClipVolume: 1
+  meleeDamage: 2
+  meleeSpeed: 0.64
+  baseMeleeStartup: 0.27
+  baseMeleeActive: 0.13
+  baseMeleeTime: 0.64
+  projectileSpeed: 10
+  projectileRange: 1
+  knockback: 15
+  travelArc: 0
+  arcHeight: 2
+  arcRange: 10
+  penetration: 0
+  isAOE: 0
+  splashRadius: 2
+  chargeTime: 1.5
+  damageRange: {x: 5, y: 15}
+  rangeRange: {x: 0.9, y: 1}
+  speedRange: {x: 10, y: 31.637531}
+  chargeEmit: 8
+  chargedFlash: 15
+  chargingClip: {fileID: 8300000, guid: fb8271f0a52934d409afd2920b65c92a, type: 3}
+  chargingClipVolume: 0.67
+  chargedLoop: {fileID: 8300000, guid: 59fcf29e34e2ed84693a2ad5cb2e1c3d, type: 3}
+  chargedLoopVolume: 0.518
+  startTime: 0.5
+  aimWeight: 1
+  minPower: 5
+  maxPower: 20
+  powerRampTime: 2
+  aimMat: {fileID: 0}
+  aimEmit: 5
+  weaponAimClip: {fileID: 0}
+  weaponAimClipVolume: 1
+  aimObject: {fileID: 0}

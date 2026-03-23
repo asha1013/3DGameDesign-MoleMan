@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fe7ac1d16809a40ff9487d8a13dfdd6e
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/documentation/1.using-the-package-2.html
+  uploadId: 790192

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f3cb1f6c57eec4bc18e186216fe64015
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/documentation/assets/plugins/sparrow-klaro-consent/dist/klaro-no-translations.js
+  uploadId: 790192

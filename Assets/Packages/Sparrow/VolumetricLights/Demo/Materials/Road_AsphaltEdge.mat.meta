@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e852af78616dca64ca13070fea042e5d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/Sparrow/VolumetricLights/Demo/Materials/Road_AsphaltEdge.mat
+  uploadId: 790192

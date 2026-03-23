@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Troubleshooting &#x2d; Sparrow</title>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The SEO Framework by Sybre Waaijer -->
+<meta name="robots" content="max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+
+<meta name="description" content="Symptoms: Volumetric lights appear completely invisible or don&rsquo;t render at all. Possible Causes &amp; Solutions: Symptoms: Volumetric effects are barely visible or&#8230;" />
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Sparrow" />
+<meta property="og:title" content="Troubleshooting" />
+<meta property="og:description" content="Symptoms: Volumetric lights appear completely invisible or don&rsquo;t render at all. Possible Causes &amp; Solutions: Symptoms: Volumetric effects are barely visible or completely blown out. Solutions&#8230;" />
+<meta property="og:url" content="5.troubleshooting.html" />
+<meta property="og:image" content="./assets/uploads/2025/02/SparrowLittleHelpers@3x.png" />
+<meta property="og:image:width" content="1101" />
+<meta property="og:image:height" content="516" />
+<meta property="article:published_time" content="2025-09-05T11:42:30+00:00" />
+<meta property="article:modified_time" content="2025-09-05T11:47:10+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Troubleshooting" />
+<meta name="twitter:description" content="Symptoms: Volumetric lights appear completely invisible or don&rsquo;t render at all. Possible Causes &amp; Solutions: Symptoms: Volumetric effects are barely visible or completely blown out. Solutions&#8230;" />
+<meta name="twitter:image" content="./assets/uploads/2025/02/SparrowLittleHelpers@3x.png" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.sparrow.tools/#/schema/WebSite","url":"https://www.sparrow.tools/","name":"Sparrow","description":"Useful Helpers","inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.sparrow.tools/search/{search_term_string}/"},"query-input":"required name=search_term_string"},"publisher":{"@type":"Organization","@id":"https://www.sparrow.tools/#/schema/Organization","name":"Sparrow","url":"https://www.sparrow.tools/","logo":{"@type":"ImageObject","url":"./assets/uploads/2025/02/SparrowLittleHelpers@3x.png","contentUrl":"./assets/uploads/2025/02/SparrowLittleHelpers@3x.png","width":1101,"height":516,"contentSize":"47066"}}},{"@type":"WebPage","@id":"5.troubleshooting.html","url":"5.troubleshooting.html","name":"Troubleshooting &#x2d; Sparrow","description":"Symptoms: Volumetric lights appear completely invisible or don&rsquo;t render at all. Possible Causes &amp; Solutions: Symptoms: Volumetric effects are barely visible or&#8230;","inLanguage":"en-US","isPartOf":{"@id":"https://www.sparrow.tools/#/schema/WebSite"},"breadcrumb":{"@type":"BreadcrumbList","@id":"https://www.sparrow.tools/#/schema/BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https://www.sparrow.tools/","name":"Sparrow"},{"@type":"ListItem","position":2,"item":"https://www.sparrow.tools/docs/","name":"Archives: Documentation"},{"@type":"ListItem","position":3,"item":"index.html","name":"Volumetric Light System"},{"@type":"ListItem","position":4,"name":"Troubleshooting"}]},"potentialAction":{"@type":"ReadAction","target":"5.troubleshooting.html"},"datePublished":"2025-09-05T11:42:30+00:00","dateModified":"2025-09-05T11:47:10+00:00"}]}</script>
+<!-- / The SEO Framework by Sybre Waaijer | 6.30ms meta | 0.69ms boot -->
+
+<link rel='stylesheet' id='wp-block-library-css' href='./assets/css/dist/block-library/style.min.css?ver=6.8.2' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--contrast: var(--contrast);--wp--preset--color--contrast-2: var(--contrast-2);--wp--preset--color--contrast-3: var(--contrast-3);--wp--preset--color--base: var(--base);--wp--preset--color--base-2: var(--base-2);--wp--preset--color--base-3: var(--base-3);--wp--preset--color--accent: var(--accent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='./assets/plugins/contact-form-7/includes/css/styles.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='docspress-css' href='./assets/plugins/docspress/assets/css/style.min.css?ver=2.5.3' media='all' />
+<link rel='stylesheet' id='sparrow-captcha-style-css' href='./assets/plugins/sparrow-captcha/sparrow-captcha.css?ver=6.8.2' media='all' />
+<link rel='stylesheet' id='swpcss-css' href='./assets/plugins/sendy-widget-pro/css/sendy.css?ver=6.8.2' media='all' />
+<link rel='stylesheet' id='generate-style-css' href='./assets/themes/generatepress/assets/css/main.min.css?ver=3.6.0' media='all' />
+<style id='generate-style-inline-css'>
+body{background-color:var(--base-2);color:var(--contrast);}a{color:var(--accent);}a{text-decoration:underline;}.entry-title a, .site-branding a, a.button, .wp-block-button__link, .main-navigation a{text-decoration:none;}a:hover, a:focus, a:active{color:var(--contrast);}.grid-container{max-width:1300px;}.wp-block-group__inner-container{max-width:1300px;margin-left:auto;margin-right:auto;}.site-header .header-image{width:160px;}:root{--contrast:#222222;--contrast-2:#575760;--contrast-3:#b2b2be;--base:#f0f0f0;--base-2:#f7f8f9;--base-3:#ffffff;--accent:#1e73be;}:root .has-contrast-color{color:var(--contrast);}:root .has-contrast-background-color{background-color:var(--contrast);}:root .has-contrast-2-color{color:var(--contrast-2);}:root .has-contrast-2-background-color{background-color:var(--contrast-2);}:root .has-contrast-3-color{color:var(--contrast-3);}:root .has-contrast-3-background-color{background-color:var(--contrast-3);}:root .has-base-color{color:var(--base);}:root .has-base-background-color{background-color:var(--base);}:root .has-base-2-color{color:var(--base-2);}:root .has-base-2-background-color{background-color:var(--base-2);}:root .has-base-3-color{color:var(--base-3);}:root .has-base-3-background-color{background-color:var(--base-3);}:root .has-accent-color{color:var(--accent);}:root .has-accent-background-color{background-color:var(--accent);}.top-bar{background-color:#636363;color:#ffffff;}.top-bar a{color:#ffffff;}.top-bar a:hover{color:#303030;}.site-header{background-color:var(--base-3);}.main-title a,.main-title a:hover{color:var(--contrast);}.site-description{color:var(--contrast-2);}.mobile-menu-control-wrapper .menu-toggle,.mobile-menu-control-wrapper .menu-toggle:hover,.mobile-menu-control-wrapper .menu-toggle:focus,.has-inline-mobile-toggle #site-navigation.toggled{background-color:rgba(0, 0, 0, 0.02);}.main-navigation,.main-navigation ul ul{background-color:var(--base-3);}.main-navigation .main-nav ul li a, .main-navigation .menu-toggle, .main-navigation .menu-bar-items{color:var(--contrast);}.main-navigation .main-nav ul li:not([class*="current-menu-"]):hover > a, .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus > a, .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"]) > a, .main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{color:var(--accent);}button.menu-toggle:hover,button.menu-toggle:focus{color:var(--contrast);}.main-navigation .main-nav ul li[class*="current-menu-"] > a{color:var(--accent);}.navigation-search input[type="search"],.navigation-search input[type="search"]:active, .navigation-search input[type="search"]:focus, .main-navigation .main-nav ul li.search-item.active > a, .main-navigation .menu-bar-items .search-item.active > a{color:var(--accent);}.main-navigation ul ul{background-color:var(--base);}.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .one-container .container, .separate-containers .paging-navigation, .inside-page-header{background-color:var(--base-3);}.entry-title a{color:var(--contrast);}.entry-title a:hover{color:var(--contrast-2);}.entry-meta{color:var(--contrast-2);}.sidebar .widget{background-color:var(--base-3);}.footer-widgets{background-color:var(--base-3);}.site-info{background-color:var(--base-3);}input[type="text"],input[type="email"],input[type="url"],input[type="password"],input[type="search"],input[type="tel"],input[type="number"],textarea,select{color:var(--contrast);background-color:var(--base-2);border-color:var(--base);}input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="search"]:focus,input[type="tel"]:focus,input[type="number"]:focus,textarea:focus,select:focus{color:var(--contrast);background-color:var(--base-2);border-color:var(--contrast-3);}button,html input[type="button"],input[type="reset"],input[type="submit"],a.button,a.wp-block-button__link:not(.has-background){color:#ffffff;background-color:#55555e;}button:hover,html input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover,a.button:hover,button:focus,html input[type="button"]:focus,input[type="reset"]:focus,input[type="submit"]:focus,a.button:focus,a.wp-block-button__link:not(.has-background):active,a.wp-block-button__link:not(.has-background):focus,a.wp-block-button__link:not(.has-background):hover{color:#ffffff;background-color:#3f4047;}a.generate-back-to-top{background-color:rgba( 0,0,0,0.4 );color:#ffffff;}a.generate-back-to-top:hover,a.generate-back-to-top:focus{background-color:rgba( 0,0,0,0.6 );color:#ffffff;}:root{--gp-search-modal-bg-color:var(--base-3);--gp-search-modal-text-color:var(--contrast);--gp-search-modal-overlay-bg-color:rgba(0,0,0,0.2);}@media (max-width: 768px){.main-navigation .menu-bar-item:hover > a, .main-navigation .menu-bar-item.sfHover > a{background:none;color:var(--contrast);}}.nav-below-header .main-navigation .inside-navigation.grid-container, .nav-above-header .main-navigation .inside-navigation.grid-container{padding:0px 20px 0px 20px;}.site-main .wp-block-group__inner-container{padding:40px;}.separate-containers .paging-navigation{padding-top:20px;padding-bottom:20px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-40px;width:calc(100% + 80px);max-width:calc(100% + 80px);}.rtl .menu-item-has-children .dropdown-menu-toggle{padding-left:20px;}.rtl .main-navigation .main-nav ul li.menu-item-has-children > a{padding-right:20px;}@media (max-width:768px){.separate-containers .inside-article, .separate-containers .comments-area, .separate-containers .page-header, .separate-containers .paging-navigation, .one-container .site-content, .inside-page-header{padding:30px;}.site-main .wp-block-group__inner-container{padding:30px;}.inside-top-bar{padding-right:30px;padding-left:30px;}.inside-header{padding-right:30px;padding-left:30px;}.widget-area .widget{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}.footer-widgets-container{padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;}.inside-site-info{padding-right:30px;padding-left:30px;}.entry-content .alignwide, body:not(.no-sidebar) .entry-content .alignfull{margin-left:-30px;width:calc(100% + 60px);max-width:calc(100% + 60px);}.one-container .site-main .paging-navigation{margin-bottom:20px;}}/* End cached CSS */.is-right-sidebar{width:30%;}.is-left-sidebar{width:30%;}.site-content .content-area{width:70%;}@media (max-width: 768px){.main-navigation .menu-toggle,.sidebar-nav-mobile:not(#sticky-placeholder){display:block;}.main-navigation ul,.gen-sidebar-nav,.main-navigation:not(.slideout-navigation):not(.toggled) .main-nav > ul,.has-inline-mobile-toggle #site-navigation .inside-navigation > *:not(.navigation-search):not(.main-nav){display:none;}.nav-align-right .inside-navigation,.nav-align-center .inside-navigation{justify-content:space-between;}.has-inline-mobile-toggle .mobile-menu-control-wrapper{display:flex;flex-wrap:wrap;}.has-inline-mobile-toggle .inside-header{flex-direction:row;text-align:left;flex-wrap:wrap;}.has-inline-mobile-toggle .header-widget,.has-inline-mobile-toggle #site-navigation{flex-basis:100%;}.nav-float-left .has-inline-mobile-toggle #site-navigation{order:10;}}
+.dynamic-author-image-rounded{border-radius:100%;}.dynamic-featured-image, .dynamic-author-image{vertical-align:middle;}.one-container.blog .dynamic-content-template:not(:last-child), .one-container.archive .dynamic-content-template:not(:last-child){padding-bottom:0px;}.dynamic-entry-excerpt > p:last-child{margin-bottom:0px;}
+</style>
+<style id='generateblocks-inline-css'>
+.gb-container-e735dfd3{border:var(--base-3);position:relative;z-index:1;max-width:1100px;margin-left:auto;margin-right:auto;}.gb-container-e735dfd3 > .gb-inside-container{max-width:1100px;margin-left:auto;margin-right:auto;z-index:1;position:relative;}.gb-grid-wrapper > .gb-grid-column-e735dfd3 > .gb-container{display:flex;flex-direction:column;height:100%;}@media (max-width: 1024px) {.gb-container-e735dfd3{margin:-100px 40px 0;}}@media (max-width: 767px) {.gb-container-e735dfd3 > .gb-inside-container{padding:40px 30px;}}:root{--gb-container-width:1300px;}.gb-container .wp-block-image img{vertical-align:middle;}.gb-grid-wrapper .wp-block-image{margin-bottom:0;}.gb-highlight{background:none;}.gb-shape{line-height:0;}
+</style>
+<script src="./assets/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="./assets/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script id="jquery-js-after">
+jQuery(document).ready(function($) {
+            // Alle externen Links finden und target="_blank" hinzufügen
+            $("a[href^=\"http://\"], a[href^=\"https://\"]").each(function() {
+                var href = $(this).attr("href");
+                var currentDomain = window.location.hostname;
+                var linkDomain = new URL(href).hostname;
+                
+                // Nur externe Links (nicht die eigene Domain)
+                if (linkDomain !== currentDomain) {
+                    $(this).attr("target", "_blank");
+                    $(this).attr("rel", "noopener noreferrer");
+                }
+            });
+        });
+</script>
+<script id="swpjs-js-extra">
+var swp = {"ajaxurl":"https:\/\/www.sparrow.tools\/wp-admin\/admin-ajax.php"};
+</script>
+<script src="./assets/plugins/sendy-widget-pro/js/sendy.js?ver=6.8.2" id="swpjs-js"></script>
+
+    <script>
+    (function() {
+        // Collect technical data
+        var techData = {
+            device_type: 'desktop',
+            os_family: 'other',
+            browser_family: 'other',
+            screen_width: null,
+            screen_height: null,
+            viewport_width: null,
+            viewport_height: null,
+            color_depth: null,
+            timezone_offset: null,
+            language: null
+        };
+        
+        // Device type detection
+        var userAgent = navigator.userAgent.toLowerCase();
+        var isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent);
+        var isTablet = /ipad|android(?!.*mobile)/i.test(userAgent);
+        
+        if (isTablet) {
+            techData.device_type = 'tablet';
+        } else if (isMobile) {
+            techData.device_type = 'mobile';
+        }
+        
+        // OS detection
+        if (userAgent.indexOf('windows') !== -1) {
+            techData.os_family = 'windows';
+        } else if (userAgent.indexOf('mac') !== -1) {
+            techData.os_family = 'macos';
+        } else if (userAgent.indexOf('linux') !== -1) {
+            techData.os_family = 'linux';
+        } else if (userAgent.indexOf('android') !== -1) {
+            techData.os_family = 'android';
+        } else if (userAgent.indexOf('iphone') !== -1 || userAgent.indexOf('ipad') !== -1 || userAgent.indexOf('ipod') !== -1) {
+            techData.os_family = 'ios';
+        }
+        
+        // Browser detection
+        if (userAgent.indexOf('chrome') !== -1 && userAgent.indexOf('edge') === -1) {
+            techData.browser_family = 'chrome';
+        } else if (userAgent.indexOf('firefox') !== -1) {
+            techData.browser_family = 'firefox';
+        } else if (userAgent.indexOf('safari') !== -1 && userAgent.indexOf('chrome') === -1) {
+            techData.browser_family = 'safari';
+        } else if (userAgent.indexOf('edge') !== -1) {
+            techData.browser_family = 'edge';
+        } else if (userAgent.indexOf('opera') !== -1 || userAgent.indexOf('opr') !== -1) {
+            techData.browser_family = 'opera';
+        }
+        
+        // Screen and viewport data
+        if (screen.width) techData.screen_width = screen.width;
+        if (screen.height) techData.screen_height = screen.height;
+        if (screen.colorDepth) techData.color_depth = screen.colorDepth;
+        
+        // Viewport dimensions
+        techData.viewport_width = window.innerWidth || document.documentElement.clientWidth;
+        techData.viewport_height = window.innerHeight || document.documentElement.clientHeight;
+        
+        // Timezone offset
+        techData.timezone_offset = new Date().getTimezoneOffset();
+        
+        // Language
+        techData.language = navigator.language || navigator.userLanguage || 'unknown';
+        
+        // Send data to server
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://www.sparrow.tools/wp-admin/admin-ajax.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send('action=sparrow_track_technical_data&data=' + encodeURIComponent(JSON.stringify(techData)) + '&_wpnonce=6680e64f3f');
+    })();
+    </script>
+    <style type="text/css">
+    .wp-block-embed__wrapper div[data-type="placeholder"] {
+        position: absolute;
+        top: 0;
+        width: 100%;
+		height: 100% !important;
+    }
+    </style><link rel="icon" href="./assets/uploads/2025/02/cropped-SparrowBirdLittleHelpers@8x-32x32.png" sizes="32x32" />
+<link rel="icon" href="./assets/uploads/2025/02/cropped-SparrowBirdLittleHelpers@8x-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="./assets/uploads/2025/02/cropped-SparrowBirdLittleHelpers@8x-180x180.png" />
+<meta name="msapplication-TileImage" content="./assets/uploads/2025/02/cropped-SparrowBirdLittleHelpers@8x-270x270.png" />
+		<style id="wp-custom-css">
+			@charset "UTF-8";
+:root {
+  --sprw-blue: #4b6584;
+  --sprw-blue-semi: #4b658444;
+  --sprw-blue-trans: #4b658422;
+	--sprw-red: #eb3b5a;	
+	--sprw-red-semi: #eb3b5a66;
+	--sprw-red-trans: #eb3b5a22;
+	--sprw-orange: #fa8231;
+	--sprw-orange-semi: #fa823144;
+	--sprw-orange-trans: #fa823122;
+	
+	--sprw-green: #0fb9b1;
+	--sprw-green-semi: #0fb9b166;
+	--sprw-green-trans: #0fb9b122;
+  --border-rad: 15px;
+  --border-rad-bg: 8px;
+}
+
+@font-face {
+	font-family: 'SourceSansProBoldIt';
+	src: local('SourceSansProBold'), url('https://www.sparrow.tools/wp-content/webfonts/subset-SourceSansPro-BoldIt.woff2') format('woff2'), url('https://www.sparrow.tools/wp-content/webfonts/subset-SourceSansPro-BoldIt.woff') format('woff'), url('https://www.sparrow.tools/wp-content/webfonts/subset-SourceSansPro-BoldIt.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+	font-family: 'SourceSansPro-Regular';
+	src: local('SourceSansPro'), url('https://www.sparrow.tools/wp-content/webfonts/SourceSansPro-Regular.woff2') format('woff2'), url('https://www.sparrow.tools/wp-content/webfonts/SourceSansPro-Regular.woff') format('woff'), url('https://www.sparrow.tools/wp-content/webfonts/SourceSansPro-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+body {
+	  background: url(./assets/uploads/2025/02/sparrow_layout3_1.png);	
+    background-color: rgba(255,255,255,0.7);
+    background-blend-mode: lighten;
+}
+
+h1 {
+	font-family: 'SourceSansProBoldIt';
+	padding-top: 10px;
+	font-size: 45px;
+  color: var(--sprw-blue);
+}
+
+h2 {
+	font-family: 'SourceSansProBoldIt';
+	padding-top: 10px;
+	font-size: 30px;
+  color: var(--sprw-blue);
+}
+
+h3 {
+	font-family: 'SourceSansProBoldIt';
+	padding-top: 5px;
+	margin-bottom: 5px;
+	font-size: 22px;
+  color: var(--sprw-blue);
+}
+
+h4 {
+	font-family: 'SourceSansProBoldIt';
+	padding-top: 5px;
+	margin-bottom: 5px;
+	font-size: 22px;
+  color: var(--sprw-blue);
+}
+
+p, li {
+	font-family: 'SourceSansPro-Regular';
+	font-size: 19px;
+}
+
+.site-header, .main-navigation {
+	background: none !important;
+}
+
+.menu a {	
+	font-family: 'SourceSansPro-Regular';
+	font-size: 0.95em;
+	font-weight: bold;
+}
+
+.current-menu-item {
+	background-color: white !important;
+	border-radius: var(--border-rad);
+}
+
+img , .gb-button {
+	border-radius: var(--border-rad);
+}
+
+.wp-block-code {	
+	border-radius: var(--border-rad); 
+}
+
+code {
+	font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New !important;
+}
+
+.inside-article {
+	border: 3px solid var(--sprw-blue);
+	border-radius: var(--border-rad);
+  box-shadow: 7px 5px 0px var(--sprw-blue-semi);
+	overflow: hidden;
+	background-color: var(--base-3);
+}
+
+.webpage-header {
+	margin-left: -50px;
+	margin-right: -50px;
+	margin-top: -50px;
+	margin-bottom: 50px;
+	padding: 10px;
+	background-color: var(--sprw-blue-semi);
+	background-blend-mode: multiply;
+	background-position: top;
+}
+
+.webpage-header-orange {
+	background-color: var(--sprw-orange-semi) !important;
+	background-blend-mode: multiply;
+}
+
+.webpage-header-red {
+	background-color: var(--sprw-red-semi) !important;
+}
+
+.webpage-header-green {
+	background-color: var(--sprw-green-semi) !important;
+}
+
+.webpage-header img {
+	height: 170px;
+	width: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/** DOCS **/
+
+.docs-endpoint-tab .wp-block-column {
+	background-color: var(--sprw-blue-trans);
+	text-align: center;
+	border-radius: var(--border-rad);
+	
+	img {
+		background-color: #ffffffaa;
+		width: calc(100% - 20px);
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	.anchorjs-link {
+		display: none;
+	}
+	
+	.not-supported-yet {
+		padding: 34px;
+	}
+}
+
+.docspress-wrap {
+	width: 100% !important;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.docspress-wrap {
+	border: 3px solid var(--sprw-blue);
+	border-radius: var(--border-rad);
+  box-shadow: 7px 5px 0px var(--sprw-blue-semi);
+	overflow: hidden;
+	background-color: var(--base-3);
+}
+
+.docspress-single-sidebar {
+	margin-right: 20px;
+	padding: 20px;
+	flex: unset;
+	max-width: 300px !important;
+	width: 300px !important;
+	border-right: 3px solid var(--sprw-blue);
+}
+
+.docspress-single-content {
+	padding: 25px;
+}
+
+.docspress-archive-list {
+	margin-left: 50px;
+	margin-bottom: 80px;
+}
+
+.docspress-nav-list li.current_page_item>a, .current_page_ancestor>a {
+	font-weight: bold !important;
+}
+
+.docspress-archive-list-item {
+	border-radius: var(--border-rad);
+	margin-right: auto;
+	max-width: 30%;
+	flex: 0 0 30%;
+	padding: 30px;
+	padding-top: 10px;
+	background-color: var(--sprw-blue-trans);
+	overflow: hidden;
+}
+
+/* single doc headers */
+
+.docspress-wrap:has(.page-item-200:is(.current_page_item, .current_page_ancestor))::before {
+	 content: "";
+  display: block;
+  height: 150px;
+	margin-left: -30px;
+	margin-right: -30px;
+	margin-top: -10px;
+  background:
+		url("https://sparrow.tools/wp-content/uploads/2025/02/SparrowDebugging_white@3x.png") no-repeat center, url("https://sparrow.tools/wp-content/uploads/2025/02/SparrowFeedbackAndBugReportingHeroHeader-1.webp") no-repeat top;
+  background-size: auto 70%, cover;
+	background-color: var(--sprw-red-semi);
+  background-blend-mode: normal, multiply;
+}
+
+.docspress-wrap:has(.page-item-204:is(.current_page_item, .current_page_ancestor))::before {
+	 content: "";
+  display: block;
+  height: 150px;
+	margin-left: -30px;
+	margin-right: -30px;
+	margin-top: -10px;
+  background:
+		url("https://sparrow.tools/wp-content/uploads/2025/02/SparrowVerification_white@3x.png") no-repeat center, url("https://sparrow.tools/wp-content/uploads/2025/02/sparrow_header-1.webp") no-repeat center;
+  background-size: auto 70%, cover;
+	background-color: var(--sprw-green-semi);
+  background-blend-mode: normal, multiply;
+}
+
+.docspress-wrap:has(.page-item-207:is(.current_page_item, .current_page_ancestor))::before {
+	 content: "";
+  display: block;
+  height: 150px;
+	margin-left: -30px;
+	margin-right: -30px;
+	margin-top: -10px;
+  background:
+		url("https://sparrow.tools/wp-content/uploads/2025/02/SparrowVolumetricLight_white@3x.png") no-repeat center, url("https://sparrow.tools/wp-content/uploads/2025/02/assetstore_layout__1.png") no-repeat center;
+  background-size: auto 70%, cover;
+	background-color: var(--sprw-orange-semi);
+  background-blend-mode: normal, multiply;
+}
+
+/* docspress menü */
+ 
+.page-item-204>a {
+	color: var(--sprw-green) !important;
+	font-weight: bold;
+}
+
+.page-item-200>a {
+	color: var(--sprw-red) !important;
+	font-weight: bold;
+}
+
+.page-item-207>a {
+	color: var(--sprw-orange) !important;
+	font-weight: bold;
+}
+
+.current_page_item > a:before {
+	content: "> ";
+}
+
+.docspress-nav-list > li > a:hover {
+	color: black !important;
+}
+
+.docspress-archive-list-item::before {
+  content: "";
+  display: block;
+  height: 100px;
+	margin-left: -30px;
+	margin-right: -30px;
+	margin-top: -10px;
+  background:
+		url("https://sparrow.tools/wp-content/uploads/2025/02/SparrowVerification_white@3x.png") no-repeat center, url("https://sparrow.tools/wp-content/uploads/2025/02/sparrow_header-1.webp") no-repeat center;
+  background-size: auto 70%, cover;
+}
+
+.docspress-archive-list-item:has(a[href*="volumetric-light-system"])::before {
+	
+  background:
+		url("https://sparrow.tools/wp-content/uploads/2025/02/SparrowVolumetricLight_white@3x.png") no-repeat center, url("https://sparrow.tools/wp-content/uploads/2025/02/assetstore_layout__1.png") no-repeat top;
+  background-size: auto 70%, cover;
+  background-color: var(--sprw-orange-semi) !important;
+  background-blend-mode: normal, multiply;
+}
+
+.docspress-archive-list-item:has(a[href*="feedback-and-bug-reporting"])::before {
+  background:
+		url("https://sparrow.tools/wp-content/uploads/2025/02/SparrowDebugging_white@3x.png") no-repeat center, url("https://sparrow.tools/wp-content/uploads/2025/02/SparrowFeedbackAndBugReportingHeroHeader-1.webp") no-repeat top;
+  background-size: auto 70%, cover;
+	background-color: var(--sprw-red-semi);
+  background-blend-mode: normal, multiply;
+}
+
+.docspress-archive-list-item:has(a[href*="project-verification"])::before {
+  background:
+		url("https://sparrow.tools/wp-content/uploads/2025/02/SparrowVerification_white@3x.png") no-repeat center, url("https://sparrow.tools/wp-content/uploads/2025/02/sparrow_header-1.webp") no-repeat center;
+  background-size: auto 70%, cover;
+	background-color: var(--sprw-green-semi);
+  background-blend-mode: normal, multiply;
+}
+
+.docspress-archive-list-item-title>span span, .docspress-archive-list-item-title>span h2 {
+	opacity: unset;
+	will-change: unset;
+	transition: unset;
+	transform: unset;
+}
+
+.docspress-single-articles {
+	display: none;
+}
+
+.docspress-nav-list > li > a > sup {
+  display: none;
+}
+
+.docspress-nav-list ul.children {
+  display: none;
+}
+
+.docspress-nav-list li.current_page_item > ul.children,
+.docspress-nav-list li.current_page_parent > ul.children,
+.docspress-nav-list li.current_page_ancestor > ul.children {
+  display: block;
+}
+
+.docspress-nav-list li:not(.current_page_item):not(.current_page_parent):not(.current_page_ancestor) > ul.children {
+  display: none;
+}
+
+/* ----------- MOBILE .... */
+
+@media screen and (max-width: 768px) {
+	.inside-article, .docspress-wrap {
+		border-radius: 0px !important;
+		border: none;
+		border-top: 3px solid var(--sprw-blue);
+	}
+	
+	.site-footer {
+		margin-top: 100px;
+	}
+	
+	#footer-logo {
+		float: unset;
+	  margin: auto;	
+	}
+	
+	.footer-text {
+		text-align: center;
+		font-size: 0;
+	}
+	
+	.footer-text a {
+		display: block;
+		font-size: 20px;
+	}
+	
+	.webpage-header img {
+		height: 100px;
+	}
+	
+	.docspress-archive-list {
+		margin: 0 !important;
+		padding: 0px 30px !important;
+	}
+	
+	.docspress-archive-list-item {
+		max-width: 100%;
+		flex: unset;
+		display: block;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	.docspress-single-sidebar {
+		border-right: 0;
+		border-bottom: 3px solid var(--sprw-blue-semi);
+		margin-bottom: 40px;
+	}
+	
+	.docspress-nav-list {
+		max-height: 50vh;
+	}
+}
+
+.frontpage-newsletter {
+	padding: 40px;
+	border: 3px solid var(--sprw-blue);
+	border-radius: var(--border-rad);
+  box-shadow: 7px 5px 0px var(--sprw-blue-semi);
+	 background: url(./assets/uploads/2025/02/sparrow_layout3_1.png);	
+    background-color: rgba(255,255,255,0.7);
+    background-blend-mode: lighten;
+	
+	label {
+		display: none;
+	}
+	input[type="text"] {
+		width: 100%;
+	}
+	input[type="submit"] {
+		width: 100%;
+	}
+}		</style>
+		<style type="text/css">.docspress-single-feedback,
+.docspress-search-form,
+.docspress-search-form-result {
+    display: none;
+}
+body {
+    background-color: #fff;
+}</style>
+
+</head>
+
+<body class="wp-singular docs-template-default single single-docs postid-445 wp-custom-logo wp-embed-responsive wp-theme-generatepress theme-generatepress sticky-menu-fade right-sidebar nav-float-right separate-containers header-aligned-left dropdown-hover" itemtype="https://schema.org/Blog" itemscope>
+	<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>		<header class="site-header has-inline-mobile-toggle" id="masthead" aria-label="Site"  itemtype="https://schema.org/WPHeader" itemscope>
+			<div class="inside-header grid-container">
+				<div class="site-logo">
+					<a href="https://www.sparrow.tools/" rel="home">
+						<img  class="header-image is-logo-image" alt="Sparrow" src="./assets/uploads/2025/02/SparrowLittleHelpers@3x.png" width="1101" height="516" />
+					</a>
+				</div>	<nav class="main-navigation mobile-menu-control-wrapper" id="mobile-menu-control-wrapper" aria-label="Mobile Toggle">
+				<button data-nav="site-navigation" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="screen-reader-text">Menu</span>		</button>
+	</nav>
+			<nav class="main-navigation sub-menu-right" id="site-navigation" aria-label="Primary"  itemtype="https://schema.org/SiteNavigationElement" itemscope>
+			<div class="inside-navigation grid-container">
+								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="screen-reader-text">Menu</span>				</button>
+				<div id="primary-menu" class="main-nav"><ul id="menu-hauptmenu" class=" menu sf-menu"><li id="menu-item-103" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-103"><a href="https://assetstore.unity.com/publishers/51270">Unity Assets<span role="presentation" class="dropdown-menu-toggle"><span class="gp-icon icon-arrow"><svg viewBox="0 0 330 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M305.913 197.085c0 2.266-1.133 4.815-2.833 6.514L171.087 335.593c-1.7 1.7-4.249 2.832-6.515 2.832s-4.815-1.133-6.515-2.832L26.064 203.599c-1.7-1.7-2.832-4.248-2.832-6.514s1.132-4.816 2.832-6.515l14.162-14.163c1.7-1.699 3.966-2.832 6.515-2.832 2.266 0 4.815 1.133 6.515 2.832l111.316 111.317 111.316-111.317c1.7-1.699 4.249-2.832 6.515-2.832s4.815 1.133 6.515 2.832l14.162 14.163c1.7 1.7 2.833 4.249 2.833 6.515z" /></svg></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="https://www.sparrow.tools/project-verification/">Project Verification</a></li>
+	<li id="menu-item-100" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100"><a href="https://www.sparrow.tools/volumetric-light-system/">Volumetric Light System</a></li>
+	<li id="menu-item-101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101"><a href="https://www.sparrow.tools/feedback-and-bug-reporting/">Feedback and Bug Reporting</a></li>
+</ul>
+</li>
+<li id="menu-item-269" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-269"><a href="https://www.sparrow.tools/docs/">Documentation</a></li>
+<li id="menu-item-102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-102"><a href="https://www.sparrow.tools/contact/">Contact</a></li>
+</ul></div>			</div>
+		</nav>
+					</div>
+		</header>
+		
+	<div class="site grid-container container hfeed" id="page">
+				<div class="site-content" id="content">
+			<div id="primary" class="content-area docspress-wrap">
+    <main id="main" class="site-main" role="main">
+
+    <article id="post-445" class="docspress-single post-445 docs type-docs status-publish hentry">
+
+        
+<div class="docspress-single-sidebar">
+    <div class="docspress-single-sidebar-wrap">
+                    <form role="search" method="get" class="docspress-search-form" action="https://www.sparrow.tools/">
+                <input type="search" class="docspress-search-field" placeholder="Type to search" value="" name="s" autocomplete="off">
+                <input type="hidden" name="post_type" value="docs">
+                            </form>
+            <div class="docspress-search-form-result"></div>
+        
+                    <ul class="docspress-nav-list">
+                <li class="page_item page-item-207 page_item_has_children current_page_ancestor current_page_parent"><a href="index.html">Volumetric Light System <sup>[5]</sup></a>
+<ul class='children'>
+	<li class="page_item page-item-157"><a href="1.using-the-package-2.html">Using the Package</a></li>
+	<li class="page_item page-item-197"><a href="2.light-profiles.html">Light Profiles</a></li>
+	<li class="page_item page-item-199"><a href="4.animating-your-lights-2.html">Animating via code</a></li>
+	<li class="page_item page-item-433"><a href="3.animating-via-component.html">Animating via component</a></li>
+	<li class="page_item page-item-445 current_page_item"><a href="5.troubleshooting.html" aria-current="page">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="page_item page-item-200 page_item_has_children"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/">Feedback and Bug Reporting <sup>[16]</sup></a>
+<ul class='children'>
+	<li class="page_item page-item-152"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/using-the-package/">Using the package</a></li>
+	<li class="page_item page-item-203 page_item_has_children"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/api-endpoints/">API Endpoints <sup>[11]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-193"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/api-endpoints/clickup/">ClickUp</a></li>
+		<li class="page_item page-item-181"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/api-endpoints/trello/">Trello</a></li>
+		<li class="page_item page-item-182"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/api-endpoints/jira/">Jira</a></li>
+		<li class="page_item page-item-183"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/api-endpoints/github/">GitHub</a></li>
+		<li class="page_item page-item-184"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/api-endpoints/discord/">Discord</a></li>
+		<li class="page_item page-item-189"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/api-endpoints/e-mail/">E-Mail</a></li>
+		<li class="page_item page-item-185"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/api-endpoints/notion/">Notion</a></li>
+		<li class="page_item page-item-186"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/api-endpoints/openproject/">OpenProject</a></li>
+		<li class="page_item page-item-187"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/api-endpoints/slack/">Slack</a></li>
+		<li class="page_item page-item-188"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/api-endpoints/unityclouddiagnostics/">UnityCloudDiagnostics</a></li>
+		<li class="page_item page-item-190"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/api-endpoints/custom-endpoint/">Custom Endpoints</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-194"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/security/">Security</a></li>
+	<li class="page_item page-item-154"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/extending-the-package/">Extending the Package</a></li>
+	<li class="page_item page-item-447"><a href="https://www.sparrow.tools/docs/feedback-and-bug-reporting/migration-from-v1/">Migration from v1</a></li>
+</ul>
+</li>
+<li class="page_item page-item-204 page_item_has_children"><a href="https://www.sparrow.tools/docs/project-verification/">Project Verification <sup>[29]</sup></a>
+<ul class='children'>
+	<li class="page_item page-item-155"><a href="https://www.sparrow.tools/docs/project-verification/using-the-package/">Using the Package</a></li>
+	<li class="page_item page-item-192 page_item_has_children"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/">Built-in checks <sup>[22]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-195"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/broken-meshes/">Broken Meshes</a></li>
+		<li class="page_item page-item-196"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/import-setting-consistency/">Import setting consistency</a></li>
+		<li class="page_item page-item-198"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/silent-audio/">Silent Audio</a></li>
+		<li class="page_item page-item-161"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/audio-clipping/">Audio-Clipping</a></li>
+		<li class="page_item page-item-162"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/broken-prefabs/">Broken Prefabs</a></li>
+		<li class="page_item page-item-163"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/broken-renderers/">Broken Renderers</a></li>
+		<li class="page_item page-item-177"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/shaders-with-compile-errors/">Broken shaders</a></li>
+		<li class="page_item page-item-164"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/broken-unity-events/">Broken Unity Events</a></li>
+		<li class="page_item page-item-165"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/duplicate-components/">Duplicate Components</a></li>
+		<li class="page_item page-item-166"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/empty-prefabs/">Empty Prefabs</a></li>
+		<li class="page_item page-item-167"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/excessive-polygon-counts/">Excessive Polygon Counts</a></li>
+		<li class="page_item page-item-168"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/inactive-components/">Inactive Components</a></li>
+		<li class="page_item page-item-169"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/inconsistent-line-endings/">Inconsistent Line Endings</a></li>
+		<li class="page_item page-item-170"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/incorrect-light-settings/">Incorrect Light-Settings</a></li>
+		<li class="page_item page-item-171"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/invalid-transform-position/">Invalid Transform Position</a></li>
+		<li class="page_item page-item-172"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/large-texture-sizes/">Large Texture Sizes</a></li>
+		<li class="page_item page-item-173"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/missing-scripts/">Missing Scripts</a></li>
+		<li class="page_item page-item-174"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/nested-ui-layout-problems/">Nested UI Layout Problems</a></li>
+		<li class="page_item page-item-175"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/normal-map-texturetype/">Normal Map TextureType</a></li>
+		<li class="page_item page-item-176"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/performance-suggestions/">Performance Suggestions</a></li>
+		<li class="page_item page-item-178"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/valid-scenes-in-build/">Valid Scenes In Build</a></li>
+		<li class="page_item page-item-179"><a href="https://www.sparrow.tools/docs/project-verification/built-in-checks/verify-interface/">Verify Interface</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-180 page_item_has_children"><a href="https://www.sparrow.tools/docs/project-verification/system-customization/">System customization <sup>[3]</sup></a>
+	<ul class='children'>
+		<li class="page_item page-item-191"><a href="https://www.sparrow.tools/docs/project-verification/system-customization/profiles/">Profiles</a></li>
+		<li class="page_item page-item-159"><a href="https://www.sparrow.tools/docs/project-verification/system-customization/the-iverify-interface/">The IVerify Interface</a></li>
+		<li class="page_item page-item-160"><a href="https://www.sparrow.tools/docs/project-verification/system-customization/attributes/">Attributes</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-158"><a href="https://www.sparrow.tools/docs/project-verification/command-line-interface/">Command Line Interface &#038; Build servers</a></li>
+</ul>
+</li>
+            </ul>
+            </div>
+</div>
+
+        <div class="docspress-single-content">
+            
+<ul class="docspress-single-breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://www.sparrow.tools/"><span itemprop="name">Home</span></a>
+            <meta itemprop="position" content="1" />
+        </li>
+                        <li class="delimiter"> / </li>
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="https://www.sparrow.tools/docs/"><span itemprop="name">Documentation</span></a>
+            <meta itemprop="position" content="2" />
+        </li>
+                        <li class="delimiter"> / </li>
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="index.html"><span itemprop="name">Volumetric Light System</span></a>
+            <meta itemprop="position" content="3" />
+        </li>
+    </ul>
+<header class="entry-header">
+    <h1 class="entry-title" itemprop="headline">Troubleshooting</h1></header><!-- .entry-header -->
+
+            <div class="entry-content">
+                
+<h2 class="wp-block-heading">Common Issues and Solutions</h2>
+
+<h3 class="wp-block-heading">Rendering&nbsp;Problems</h3>
+
+<h4 class="wp-block-heading">Lights Not Visible</h4>
+
+<p>Symptoms: Volumetric lights appear completely invisible or don&#8217;t render at all.</p>
+
+<p><strong>Possible Causes &amp; Solutions:</strong></p>
+
+<ul class="wp-block-list">
+<li>Missing Shader Graph Package: Ensure the Shader Graph package is installed
+<ul class="wp-block-list">
+<li>Go to Window > Package Manager > Unity Registry > Shader Graph</li>
+
+<li>Install the appropriate version for your Unity version</li>
+</ul>
+</li>
+
+<li>Light Component Missing: Ensure the <code>GameObject</code> has a <code>Light</code> component
+<ul class="wp-block-list">
+<li>Add Component > Rendering > Light if missing</li>
+</ul>
+</li>
+
+<li>Camera Culling: Check if the light is within the camera&#8217;s culling distance
+<ul class="wp-block-list">
+<li>Adjust Camera > Culling Mask or increase Far Clipping Plane</li>
+</ul>
+</li>
+</ul>
+
+<h4 class="wp-block-heading">Lights Appear Too Dark or Too Bright</h4>
+
+<p>Symptoms: Volumetric effects are barely visible or completely blown out.</p>
+
+<p><strong>Solutions:</strong></p>
+
+<ul class="wp-block-list">
+<li>Adjust Intensity Multiplier: In the Volumetric Light component, modify Intensity Multiplier (0-2 range)</li>
+
+<li>Check Light Settings: Verify the base Light component&#8217;s intensity and color</li>
+
+<li>Blending Mode: Try switching between Alpha and Additive blending modes</li>
+
+<li>Alpha Value: For Alpha blending, ensure the alpha value is appropriate (0-1)</li>
+
+<li>HDR Settings: Check if HDR is enabled on your camera and adjust accordingly</li>
+</ul>
+
+<h3 class="wp-block-heading">Performance&nbsp;Issues</h3>
+
+<h4 class="wp-block-heading">Low Frame Rate with Volumetric Lights</h4>
+
+<p>Symptoms: Significant performance drop when using volumetric lights.</p>
+
+<p><strong>Solutions:</strong></p>
+
+<ul class="wp-block-list">
+<li>Reduce Light Count: Limit the number of active volumetric lights simultaneously</li>
+
+<li>Distance Culling: Implement distance-based culling for lights far from the camera</li>
+
+<li>LOD System: Use different quality settings based on distance</li>
+
+<li>Texture Resolution: Lower the fog texture resolution if using fog textures</li>
+
+<li>Animation Complexity: Reduce animation complexity or disable animations for distant lights</li>
+</ul>
+
+<pre class="wp-block-code"><code>// Example: Distance-based culling
+
+public class LightPerformanceManager : MonoBehaviour
+
+{
+
+    &#91;SerializeField] VolumetricLightAnimation&#91;] lights;
+
+    &#91;SerializeField] float cullDistance = 50f;
+
+    &#91;SerializeField] Transform player;
+
+    void Update()
+
+    {
+
+        foreach (var light in lights)
+
+        {
+
+            float distance = Vector3.Distance(light.transform.position, player.position);
+
+            light.enableAnimations = distance &lt; cullDistance;
+
+        }
+
+    }
+
+}</code></pre>
+
+<p></p>
+
+<h3 class="wp-block-heading">Animation Problems</h3>
+
+<h4 class="wp-block-heading">Animations Not Working</h4>
+
+<p>Symptoms: <code>VolumetricLightAnimation</code> component doesn&#8217;t animate the light.</p>
+
+<p><strong>Solutions:</strong></p>
+
+<ul class="wp-block-list">
+<li>Enable Animations: Ensure Enable Animations is checked in the inspector</li>
+
+<li>Component Order: Verify VolumetricLightAnimation is added after VolumetricLight</li>
+
+<li>Runtime vs Editor: Check if the issue occurs only in play mode or also in editor</li>
+
+<li>Profile Override: If using a profile, ensure it&#8217;s not overriding animation settings</li>
+</ul>
+
+<h4 class="wp-block-heading">Animation Performance&nbsp;Issues</h4>
+
+<p>Symptoms: Animations cause frame drops or stuttering.</p>
+
+<p><strong>Solutions:</strong></p>
+
+<ul class="wp-block-list">
+<li>Reduce Animation Complexity: Lower the number of animated properties</li>
+
+<li>Use Coroutines: For complex animations, use coroutines instead of Update</li>
+
+<li>Batch Updates: Update multiple lights in a single frame rather than spread across frames</li>
+
+<li>Disable When Not Visible: Only animate lights that are visible to the camera</li>
+</ul>
+
+<pre class="wp-block-code"><code>// Example: Optimized animation update
+
+public class OptimizedLightAnimator : MonoBehaviour
+
+{
+
+    &#91;SerializeField] VolumetricLightAnimation&#91;] lights;
+
+    &#91;SerializeField] int lightsPerFrame = 5;
+
+    private int currentIndex = 0;
+
+    void Update()
+
+    {
+
+        for (int i = 0; i &lt; lightsPerFrame &amp;&amp; currentIndex &lt; lights.Length; i++)
+
+        {
+
+            if (lights&#91;currentIndex].enabled)
+
+            {
+
+                // Update animation logic here
+
+            }
+
+            currentIndex++;
+
+        }
+
+        if (currentIndex >= lights.Length)
+
+            currentIndex = 0;
+
+    }
+
+}</code></pre>
+
+<h3 class="wp-block-heading">Editor Issues</h3>
+
+<h4 class="wp-block-heading">Inspector Not Updating</h4>
+
+<p>Symptoms: Changes in the inspector don&#8217;t reflect in the scene view.</p>
+
+<p><strong>Solutions:</strong></p>
+
+<ul class="wp-block-list">
+<li>Force Update: Call UpdateVolumetricLight() manually</li>
+
+<li>Refresh Inspector: Right-click in inspector and select &#8220;Refresh&#8221;</li>
+
+<li>Recompile Scripts: Force script recompilation (Ctrl+R)</li>
+
+<li>Restart Editor: As a last resort, restart Unity Editor</li>
+</ul>
+
+<h4 class="wp-block-heading">Prefab Issues</h4>
+
+<p>Symptoms: Prefab modifications don&#8217;t work correctly or cause errors.</p>
+
+<p><strong>Solutions:</strong></p>
+
+<ul class="wp-block-list">
+<li>Apply Changes: Ensure prefab changes are properly applied</li>
+
+<li>Check References: Verify all component references are intact</li>
+
+<li>Nested Prefabs: Be careful with nested prefab modifications</li>
+
+<li>Version Control: Check for version control conflicts</li>
+</ul>
+
+<h3 class="wp-block-heading">Shader&nbsp;and Material Issues</h3>
+
+<h4 class="wp-block-heading">Shader Compilation&nbsp;Errors</h4>
+
+<p>Symptoms: Shader compilation errors in the console.</p>
+
+<p><strong>Solutions:</strong></p>
+
+<ul class="wp-block-list">
+<li>Check Shader Graph: Verify shader graphs are properly configured</li>
+
+<li>Missing Keywords: Ensure all required shader keywords are defined</li>
+
+<li>Platform Support: Check if shaders support your target platform</li>
+
+<li>Update Shaders: Update to latest shader versions</li>
+</ul>
+
+<h4 class="wp-block-heading">Material Property Issues</h4>
+
+<p>Symptoms: Material properties not being set correctly.</p>
+
+<p><strong>Solutions:</strong></p>
+
+<ul class="wp-block-list">
+<li>Property Block: Use MaterialPropertyBlock for runtime changes</li>
+
+<li>Shader Properties: Verify shader property names match exactly</li>
+
+<li>Material Instances: Ensure you&#8217;re modifying the correct material instance</li>
+
+<li>GPU Instancing: Check if GPU instancing is interfering with property setting</li>
+</ul>
+            </div><!-- .entry-content -->
+
+            
+<footer class="entry-footer">
+    <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+        <meta itemprop="name" content="admin" />
+        <meta itemprop="url" content="https://www.sparrow.tools/author/sparrow_a/" />
+    </div>
+
+    <meta itemprop="datePublished" content="2025-09-05T11:42:30+00:00"/>
+    <time itemprop="dateModified" datetime="2025-09-05T11:47:10+00:00">
+        Last modified September 5, 2025    </time>
+</footer>
+    <nav class="docspress-single-adjacent-nav">
+        <h3 class="docspress-sr-only">Doc navigation</h3>
+                    <span class="nav-previous">
+                <a href="3.animating-via-component.html" class="docspress-btn docspress-btn-md"><span class="icon">&lt;</span> Animating via component</a>
+            </span>
+        
+            </nav>
+    
+<div class="docspress-single-feedback">
+    
+    <div>
+        Was this page helpful?    </div>
+
+    <div class="docspress-single-feedback-vote">
+        <a href="#" class="docspress-btn" data-id="445" data-type="positive" title="No votes yet">
+            Yes
+                    </a>
+        <a href="#" class="docspress-btn" data-id="445" data-type="negative" title="No votes yet">
+            No
+                    </a>
+    </div>
+</div>
+        </div><!-- .docspress-single-content -->
+    </article><!-- #post-## -->
+        </main>
+</div>
+
+	</div>
+</div>
+
+<div class="site-footer">
+	<div class="gb-container gb-container-e735dfd3 newsletter-signup-sparrow"><div class="gb-inside-container">
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:54.55%"><div class="wp-block-image">
+<figure class="alignleft size-full is-resized" id="footer-logo"><a href="https://sparrow.tools/"><img loading="lazy" decoding="async" width="1101" height="516" src="https://sparrow.tools/wp-content/uploads/2025/02/SparrowLittleHelpers@3x.png" alt="" class="wp-image-12" style="object-fit:cover;width:143px;height:auto" srcset="./assets/uploads/2025/02/SparrowLittleHelpers@3x.png 1101w, ./assets/uploads/2025/02/SparrowLittleHelpers@3x-300x141.png 300w, ./assets/uploads/2025/02/SparrowLittleHelpers@3x-1024x480.png 1024w, ./assets/uploads/2025/02/SparrowLittleHelpers@3x-768x360.png 768w" sizes="auto, (max-width: 1101px) 100vw, 1101px" /></a></figure></div></div>
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:45.45%">
+<p class="has-text-align-right footer-text has-000000-color has-text-color"><a href="#" onclick="klaro.show(); return false;">Cookie settings</a> | <a href="https://sparrow.tools/?page_id=113" data-type="page" data-id="113">Imprint</a> | <a href="https://sparrow.tools/?page_id=113" data-type="page" data-id="113">Privacy Policy</a> | <a href="https://sparrow.tools/?page_id=16" data-type="page" data-id="16">Contact</a></p>
+</div>
+</div>
+
+</div></div>
+
+<p class="has-text-align-center has-small-font-size">Sparrow is a project by <a href="https://www.offthebeatentrack.games" data-type="link" data-id="https://www.offthebeatentrack.games" target="_blank" rel="noreferrer noopener">Off The Beaten Track, a company that develops serious games and indie games</a>.</p>
+
+<p></p>
+</div>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/generatepress\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (klaro && klaro.getManager().getConsent('matomo')) {
+            // Matomo-Code ausführen
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.text = "<!-- Matomo -->\r\n  var _paq = window._paq = window._paq || [];\r\n  \/* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" *\/\r\n  _paq.push(['trackPageView']);\r\n  _paq.push(['enableLinkTracking']);\r\n  (function() {\r\n    var u=\"https:\/\/analytics.otbt-cloud.de\/\";\r\n    _paq.push(['setTrackerUrl', u+'matomo.php']);\r\n    _paq.push(['setSiteId', '21']);\r\n    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\r\n    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);\r\n  })();\r\n<!-- End Matomo Code -->";
+            document.head.appendChild(script);
+        }
+    });
+    </script>
+    <script id="generate-a11y">
+!function(){"use strict";if("querySelector"in document&&"addEventListener"in window){var e=document.body;e.addEventListener("pointerdown",(function(){e.classList.add("using-mouse")}),{passive:!0}),e.addEventListener("keydown",(function(){e.classList.remove("using-mouse")}),{passive:!0})}}();
+</script>
+<style id='core-block-supports-inline-css'>
+.wp-container-core-columns-is-layout-9d6595d7{flex-wrap:nowrap;}
+</style>
+<script src="./assets/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="./assets/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script src="./assets/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.1" id="swv-js"></script>
+<script id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/www.sparrow.tools\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    }
+};
+</script>
+<script src="./assets/plugins/contact-form-7/includes/js/index.js?ver=6.1.1" id="contact-form-7-js"></script>
+<script src="./assets/plugins/docspress/assets/vendor/anchor-js/anchor.min.js?ver=4.2.2" id="anchor-js-js"></script>
+<script src="./assets/plugins/docspress/assets/vendor/ivent/dist/ivent.min.js?ver=0.2.0" id="ivent-js"></script>
+<script id="docspress-js-extra">
+var docspress_vars = {"ajaxurl":"https:\/\/www.sparrow.tools\/wp-admin\/admin-ajax.php","nonce":"3a023248bc"};
+</script>
+<script src="./assets/plugins/docspress/assets/js/script.min.js?ver=2.5.3" id="docspress-js"></script>
+<script id="sparrow-captcha-script-js-extra">
+var sparrowCaptcha = {"ajax_url":"https:\/\/www.sparrow.tools\/wp-admin\/admin-ajax.php"};
+</script>
+<script src="./assets/plugins/sparrow-captcha/sparrow-captcha.js?ver=1.0" id="sparrow-captcha-script-js"></script>
+<script id="klaro-js-js-before">
+var klaroConfig = {
+    testing: false,
+    elementID: 'klaro',
+    storageMethod: 'cookie',
+    storageName: 'klaro',
+    htmlTexts: true,
+    cookieExpiresAfterDays: 30,
+    default: true,
+    mustConsent: false,
+    acceptAll: true,
+    hideDeclineAll: false,
+    hideLearnMore: false,
+
+    translations: {
+        zz: {
+            privacyPolicyUrl: '/imprint-privacy-policy',
+        },
+         en: {
+                decline: 'Decline',
+                ok: 'Accept',
+                save: 'Save',
+                acceptAll: 'Accept all',
+                acceptSelected: 'Accept selected',
+            privacyPolicyUrl: '/imprint-privacy-policy',
+                poweredBy: 'Powered by Klaro',
+                purposeItem: {
+                 service: 'service in this category. Click to see more info'
+                },
+                contextualConsent: {
+                 description: 'Load external data content here (Youtube video)?',
+                 acceptOnce: 'Once',
+                 acceptAlways: 'Always',
+                },
+                privacyPolicy: {
+                 text: 'See our privacy policy for more info.'
+                },
+                service: {
+                        disableAll: {
+                         title: 'Disable all',
+                         description: 'Click here to disable all non-essential settings',
+                        },
+                        required: {
+                         title: 'These services are required'
+                        },
+                         purpose: 'Purpose'
+                 
+                },
+            consentNotice: {
+                description: 'In addition to technically necessary cookies, this website also uses cookies for analyzing website access or personalizing your user experience. You can revoke your consent at any time. More information can be found in our <a href="/imprint-privacy-policy" target="_blank">Privacy Policy</a>.',
+                learnMore: 'Settings',
+                decline: 'Decline',
+                ok: 'Ok'
+            },
+            consentModal: {
+                title: 'Privacy Settings',
+                description: 'Here you can choose which cookies you want to allow. You can change your settings at any time.',
+                acceptAll: 'Accept all',
+                acceptSelected: 'Save selection',
+                decline: 'Decline all',
+            },
+            purposes: {
+                analytics: {
+                    title: 'Analytics',
+                   service: 'We use Matomo to collect anonymous usage data'
+                },
+                security: {
+                    title: 'Required',
+                },
+                livechat: {
+                    title: 'Live Chat',
+                },
+                advertising: {
+                    title: 'Show ads',
+                },
+                styling: {
+                    title: 'Styling',
+                },
+                media: {
+                    title: 'Media',
+                },
+            },
+        },
+    },
+
+    services: [
+{
+            name: 'phpSession',
+            default: true,
+            purposes: ['security'],
+            cookies: [
+                'PHPSESSID',
+            ],
+            required: true,
+            translations: {
+                en: {
+                    title: 'PHP Session',
+                    description: 'This cookie is necessary to maintain your user session.',
+                },
+            },
+        },
+        {
+            name: 'matomo',
+            default: false,
+            purposes: ['analytics'],
+            cookies: [
+                [/^_pk_.*$/, '/', 'klaro.kiprotect.com'],
+                [/^_pk_.*$/, '/', 'localhost'],
+                'piwik_ignore',
+            ],
+            translations: {
+                zz: {
+                    title: 'Matomo/Piwik',
+                },
+                en: {
+                    description: 'Matomo is a simple, self-hosted analytics service.',
+                }
+            },
+            required: false,
+            optOut: false,
+            onlyOnce: true,
+        },
+        {
+            name: 'youtube',
+            default: false,
+            purposes: ['media'],
+            translations: {
+                en: {
+                    title: 'Youtube Videos',
+                    description: 'Embedded Youtube videos.',
+                }
+            },
+            required: false,
+            optOut: false,
+            onlyOnce: true,
+        },
+    ],
+
+    callback: function(consent, service) {
+        console.log('User consent for service ' + service.name + ': consent=' + consent);
+    },
+};
+</script>
+<script src="./assets/plugins/sparrow-klaro-consent/dist/klaro-no-translations.js" id="klaro-js-js"></script>
+<!--[if lte IE 11]>
+<script src="./assets/themes/generatepress/assets/js/classList.min.js?ver=3.6.0" id="generate-classlist-js"></script>
+<![endif]-->
+<script id="generate-menu-js-before">
+var generatepressMenu = {"toggleOpenedSubMenus":true,"openSubMenuLabel":"Open Sub-Menu","closeSubMenuLabel":"Close Sub-Menu"};
+</script>
+<script src="./assets/themes/generatepress/assets/js/menu.min.js?ver=3.6.0" id="generate-menu-js"></script>
+
+</body>
+</html>

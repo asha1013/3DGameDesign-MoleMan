@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d7a0a7c178af49a43b9390ede6817031
+timeCreated: 1495936136
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 91686
+  packageName: Stylized Rocks
+  packageVersion: 1.2
+  assetPath: Assets/Rocks/Materials/rock_5.mat
+  uploadId: 718649

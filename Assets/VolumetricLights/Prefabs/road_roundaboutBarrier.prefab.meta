@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b129135d1d4a92c4ea4a0105496135dc
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/Prefabs/road_roundaboutBarrier.prefab
+  uploadId: 790192

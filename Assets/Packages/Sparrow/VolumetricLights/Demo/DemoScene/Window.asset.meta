@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6569a141907911849a11d5cdb31b1ac7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/Sparrow/VolumetricLights/Demo/DemoScene/Window.asset
+  uploadId: 790192

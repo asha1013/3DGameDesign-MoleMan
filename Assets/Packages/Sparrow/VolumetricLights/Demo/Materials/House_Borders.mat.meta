@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: aa30b5d3d9702fe4d880e80d6df80a34
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/Sparrow/VolumetricLights/Demo/Materials/House_Borders.mat
+  uploadId: 790192

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e23f387356f382746b1206aa485b9a3c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/Prefabs/fence_wide.prefab
+  uploadId: 790192

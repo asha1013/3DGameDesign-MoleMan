@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 54b363ae4ba287d46b550b84410ed730
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - doorOpenClip: {fileID: 8300000, guid: 45edd8f9486a53c4394e6a2c22f5bb24, type: 3}
+  - doorCloseClip: {fileID: 8300000, guid: ea8ea5b9cfc8a024395a5ee0fca0bb68, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

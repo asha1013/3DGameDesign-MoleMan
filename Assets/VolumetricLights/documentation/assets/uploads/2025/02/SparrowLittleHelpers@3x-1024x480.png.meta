@@ -1,0 +1,813 @@
+fileFormatVersion: 2
+guid: 9c6021c11856241bb810a7cdbdd95e2e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3272688060532987890
+    second: SparrowLittleHelpers@3x-1024x480_0
+  - first:
+      213: 7677877781349191918
+    second: SparrowLittleHelpers@3x-1024x480_1
+  - first:
+      213: 7249328170354520003
+    second: SparrowLittleHelpers@3x-1024x480_2
+  - first:
+      213: -1159401959721430355
+    second: SparrowLittleHelpers@3x-1024x480_3
+  - first:
+      213: 4642305020726194341
+    second: SparrowLittleHelpers@3x-1024x480_4
+  - first:
+      213: 8068236874068218084
+    second: SparrowLittleHelpers@3x-1024x480_5
+  - first:
+      213: 5840183657440408006
+    second: SparrowLittleHelpers@3x-1024x480_6
+  - first:
+      213: 8361259572542640437
+    second: SparrowLittleHelpers@3x-1024x480_7
+  - first:
+      213: 4606016408290179590
+    second: SparrowLittleHelpers@3x-1024x480_8
+  - first:
+      213: -1502834159663020226
+    second: SparrowLittleHelpers@3x-1024x480_9
+  - first:
+      213: -8407765506009630720
+    second: SparrowLittleHelpers@3x-1024x480_10
+  - first:
+      213: 1944229296230412241
+    second: SparrowLittleHelpers@3x-1024x480_11
+  - first:
+      213: -2466256876454913626
+    second: SparrowLittleHelpers@3x-1024x480_12
+  - first:
+      213: 3012038894866753986
+    second: SparrowLittleHelpers@3x-1024x480_13
+  - first:
+      213: 3928453230266331336
+    second: SparrowLittleHelpers@3x-1024x480_14
+  - first:
+      213: -4830689465253664517
+    second: SparrowLittleHelpers@3x-1024x480_15
+  - first:
+      213: 5749820314610484
+    second: SparrowLittleHelpers@3x-1024x480_16
+  - first:
+      213: -8481560319507282589
+    second: SparrowLittleHelpers@3x-1024x480_17
+  - first:
+      213: 4714981921746045829
+    second: SparrowLittleHelpers@3x-1024x480_18
+  - first:
+      213: 8112471503319597682
+    second: SparrowLittleHelpers@3x-1024x480_19
+  - first:
+      213: 1224518825068443297
+    second: SparrowLittleHelpers@3x-1024x480_20
+  - first:
+      213: -2368954714169968804
+    second: SparrowLittleHelpers@3x-1024x480_21
+  - first:
+      213: -961497256234328196
+    second: SparrowLittleHelpers@3x-1024x480_22
+  - first:
+      213: 4747608455502045233
+    second: SparrowLittleHelpers@3x-1024x480_23
+  - first:
+      213: 3657796730014416315
+    second: SparrowLittleHelpers@3x-1024x480_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 269
+        height: 359
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f71bbc937cea6d20800000000000000
+      internalID: 3272688060532987890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_1
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 345
+        width: 137
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0de2ab92d4d8a60800000000000000
+      internalID: 7677877781349191918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 345
+        width: 137
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cfa636ff89ca9460800000000000000
+      internalID: 7249328170354520003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_3
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 345
+        width: 137
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da299e67f0af8efe0800000000000000
+      internalID: -1159401959721430355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 198
+        width: 63
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0b56302d7cc6040800000000000000
+      internalID: 4642305020726194341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_5
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 175
+        width: 79
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e05b8a80b228ff60800000000000000
+      internalID: 8068236874068218084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_6
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 198
+        width: 74
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1f6c408108c0150800000000000000
+      internalID: 5840183657440408006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_7
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 199
+        width: 62
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5311d380849290470800000000000000
+      internalID: 8361259572542640437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_8
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 199
+        width: 63
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ab1c5058bdbef30800000000000000
+      internalID: 4606016408290179590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_9
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 198
+        width: 69
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3786fc4b4cd42be0800000000000000
+      internalID: -1502834159663020226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_10
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 199
+        width: 98
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008738b81dd915b80800000000000000
+      internalID: -8407765506009630720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_11
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 64
+        width: 34
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dfa8b37e3a4bfa10800000000000000
+      internalID: 1944229296230412241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_12
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 143
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a95a0a007816cdd0800000000000000
+      internalID: -2466256876454913626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_13
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 64
+        width: 46
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9613a9a69ecc920800000000000000
+      internalID: 3012038894866753986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_14
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 64
+        width: 45
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0b2ca266ba48630800000000000000
+      internalID: 3928453230266331336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_15
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 64
+        width: 35
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf865538681f5fcb0800000000000000
+      internalID: -4830689465253664517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_16
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 65
+        width: 67
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43bef5d5e6d641000800000000000000
+      internalID: 5749820314610484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_17
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 64
+        width: 35
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36548be93d17b4a80800000000000000
+      internalID: -8481560319507282589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_18
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 65
+        width: 32
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58bcf08a31bfe6140800000000000000
+      internalID: 4714981921746045829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_19
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 64
+        width: 61
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27208ddb9d9459070800000000000000
+      internalID: 8112471503319597682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_20
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 64
+        width: 61
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a6bbf4326d5ef010800000000000000
+      internalID: 1224518825068443297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_21
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 39
+        width: 74
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5779ec1d38cf1fd0800000000000000
+      internalID: -2368954714169968804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_22
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 64
+        width: 61
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fd3a5f65318a2f0800000000000000
+      internalID: -961497256234328196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_23
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 65
+        width: 55
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13027d28cb4e2e140800000000000000
+      internalID: 4747608455502045233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SparrowLittleHelpers@3x-1024x480_24
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 64
+        width: 57
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd38110fba13c230800000000000000
+      internalID: 3657796730014416315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SparrowLittleHelpers@3x-1024x480_0: 3272688060532987890
+      SparrowLittleHelpers@3x-1024x480_1: 7677877781349191918
+      SparrowLittleHelpers@3x-1024x480_10: -8407765506009630720
+      SparrowLittleHelpers@3x-1024x480_11: 1944229296230412241
+      SparrowLittleHelpers@3x-1024x480_12: -2466256876454913626
+      SparrowLittleHelpers@3x-1024x480_13: 3012038894866753986
+      SparrowLittleHelpers@3x-1024x480_14: 3928453230266331336
+      SparrowLittleHelpers@3x-1024x480_15: -4830689465253664517
+      SparrowLittleHelpers@3x-1024x480_16: 5749820314610484
+      SparrowLittleHelpers@3x-1024x480_17: -8481560319507282589
+      SparrowLittleHelpers@3x-1024x480_18: 4714981921746045829
+      SparrowLittleHelpers@3x-1024x480_19: 8112471503319597682
+      SparrowLittleHelpers@3x-1024x480_2: 7249328170354520003
+      SparrowLittleHelpers@3x-1024x480_20: 1224518825068443297
+      SparrowLittleHelpers@3x-1024x480_21: -2368954714169968804
+      SparrowLittleHelpers@3x-1024x480_22: -961497256234328196
+      SparrowLittleHelpers@3x-1024x480_23: 4747608455502045233
+      SparrowLittleHelpers@3x-1024x480_24: 3657796730014416315
+      SparrowLittleHelpers@3x-1024x480_3: -1159401959721430355
+      SparrowLittleHelpers@3x-1024x480_4: 4642305020726194341
+      SparrowLittleHelpers@3x-1024x480_5: 8068236874068218084
+      SparrowLittleHelpers@3x-1024x480_6: 5840183657440408006
+      SparrowLittleHelpers@3x-1024x480_7: 8361259572542640437
+      SparrowLittleHelpers@3x-1024x480_8: 4606016408290179590
+      SparrowLittleHelpers@3x-1024x480_9: -1502834159663020226
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/documentation/assets/uploads/2025/02/SparrowLittleHelpers@3x-1024x480.png
+  uploadId: 790192

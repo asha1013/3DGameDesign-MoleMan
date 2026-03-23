@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c7af52b83fdbd714183a45a23eaf5a70
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/Prefabs/driveway_long.prefab
+  uploadId: 790192

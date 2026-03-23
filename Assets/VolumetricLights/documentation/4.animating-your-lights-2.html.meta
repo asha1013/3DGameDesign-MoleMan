@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 761bf3633f07944a886d2656401d1bf8
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/documentation/4.animating-your-lights-2.html
+  uploadId: 790192

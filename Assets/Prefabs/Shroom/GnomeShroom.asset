@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea8a637d6bee6b46b5c5cb8161fdba4, type: 3}
+  m_Name: GnomeShroom
+  m_EditorClassIdentifier: 
+  mushroomName: GnomeShroom
+  reagent: {fileID: 11400000, guid: 14874c50200b3494ea0cd884360346b0, type: 2}
+  growingMat: {fileID: 2100000, guid: 2a7dcc59bf3a3b949a74e7092afa335b, type: 2}
+  grownMat: {fileID: 2100000, guid: b9987ca53f3706b44b4a60bb278da13c, type: 2}
+  reqProgress: 5
+  color: {r: 1, g: 0, b: 0, a: 0}
+  rewardPrefab: {fileID: 4121818776991928236, guid: 6cdb068b78ff19c4d8d0f1f33ceee9e0, type: 3}

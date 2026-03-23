@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a2d3e0f575c22dc43a982fbea5dd6156
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/Prefabs/tree_small.prefab
+  uploadId: 790192

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f032426a37c042c4a9c844a8f879ce92
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/Sparrow/VolumetricLights/Demo/Materials/Road_Line.mat
+  uploadId: 790192

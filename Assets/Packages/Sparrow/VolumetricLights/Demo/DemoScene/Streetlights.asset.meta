@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8f89c33e1ebc2014e9da593e18830c65
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/Sparrow/VolumetricLights/Demo/DemoScene/Streetlights.asset
+  uploadId: 790192

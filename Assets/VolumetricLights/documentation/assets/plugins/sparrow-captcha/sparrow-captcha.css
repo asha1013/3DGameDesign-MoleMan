@@ -1,0 +1,10 @@
+.sparrow-captcha {
+    display: block;
+}
+
+.wpcf7-not-valid-tip {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}

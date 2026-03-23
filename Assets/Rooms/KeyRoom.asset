@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f904cf2705f16a44b85d36a54fb8dbb9, type: 3}
+  m_Name: KeyRoom
+  m_EditorClassIdentifier: 
+  roomPrefabs:
+  - {fileID: 3056980433227486698, guid: 0305a8012638d0c45b69ec9eb10c1239, type: 3}
+  normalRoom: 0
+  defaultRoom: {fileID: 0}
+  startRoom: 0
+  vertOffset: 1
+  keyRoom: 1
+  bossRoom: 0
+  bossPrefabs: []
+  distFromBoss: {x: 4, y: 6}
+  distFromStart: {x: 3, y: 6}
+  possibleSpawns: {x: 1, y: 1}
+  maxConnections: 1
+  isExtRoom: 1
+  minimapIcon: {fileID: 21300000, guid: ccf8ccc099dbeb8478477ee014b838e5, type: 3}

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 158730d1a64800a4da997774183d8195
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/Sparrow/VolumetricLights/Demo/DemoScene/Colors Profile 2.asset
+  uploadId: 790192

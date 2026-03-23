@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8413d638797d5e9458358fe7d7717d56
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/Sparrow/VolumetricLights/Demo/Materials/House_Roofs.mat
+  uploadId: 790192

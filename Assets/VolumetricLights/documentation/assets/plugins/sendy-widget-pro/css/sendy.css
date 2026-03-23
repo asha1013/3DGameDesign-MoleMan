@@ -1,0 +1,95 @@
+.shortcode-subscribe-form.sendy-subscriber-count,.sendy-submit-btn{
+	padding-top: 4px;
+}
+
+.shortcode-subscribe-form label{
+	min-width: 70px;
+	display: inline-block;
+}
+
+.shortcode-subscribe-form .name-cont{
+	margin-bottom: 10px;
+}
+
+.shortcode-subscribe-form .sendy-subscriber-count,.shortcode-subscribe-form .sendy_terms,.sendy-form-row-captcha,.shortcode_sendy_success,.shortcode_sendy_error{
+	/*margin-left: 70px;*/
+	margin-bottom: 5px;
+}
+.shortcode-subscribe-form .sendy-submit-btn{
+	/*margin-left: 70px;*/
+}
+
+.subscribe-form  .sendy-form-row,.captcha-image{
+	margin-bottom: 6px;
+}
+
+.subscribe-form .sendy-form-row input[type=text] {
+	padding: 6px 1px 6px 6px;
+	line-height: 26px;
+}
+
+.subscribe-form .sendy-form-row label{
+	display: inline-block;
+	font-size: 14px;
+	margin-bottom: 6px;
+}
+.subscribe-form .sendy-form-row input.captcha-input{
+	max-width: 120px;
+}
+.sendy-subscriber-count{
+	padding:10px 0;
+}
+.img-captcha-ref{
+	max-height: 26px;
+	vertical-align: middle;
+	max-width: 26px;
+}
+
+/** New Form Layout css */
+.swp-form {
+	float: none;
+}
+.swpclear{
+	clear: both;
+}
+.swp-form .swp-row{
+	width: 100%;
+	margin-bottom:15px;
+}
+
+.swp-form .swp-col{
+    float: left;
+    width: 45%;
+}
+.swp-form .swp-col-1{
+	   margin-right: 10%;
+}
+.swp-form .swp-colsize-2{
+	width: 100%;
+}
+
+.swp-email-valid-error, .swp-email-duplicate-error,.swp-success,.swp-captcha-error,.swp-form .swp-spinner, .swp-raw-error{
+	display: none;
+}
+.swp-spinner{
+    margin-left: 6px;
+}
+
+.swp-email-valid-error, .swp-email-duplicate-error,.swp-success,.swp-captcha-error,.swp-form .swp-spinner{
+	display: none;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+.swp-form .swp-col{
+	float:none;
+	width:100%;
+}
+.g-recaptcha{
+	transform: scale(0.77);
+    -webkit-transform: scale(0.77);
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+}
+
+}
+

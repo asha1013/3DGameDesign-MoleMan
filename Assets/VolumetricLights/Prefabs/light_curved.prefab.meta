@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9559101f3561b3044b8584c5befb1544
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/Prefabs/light_curved.prefab
+  uploadId: 790192

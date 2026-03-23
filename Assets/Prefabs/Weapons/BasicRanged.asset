@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d891114846ed840ad47e9e32c86fcf, type: 3}
+  m_Name: BasicRanged
+  m_EditorClassIdentifier: 
+  weaponObj: {fileID: 3053455259434319771, guid: 0ed1dbcbc67c2e94ab110cd7b454ffe7, type: 3}
+  weaponName: 
+  attackType: 0
+  uniqueRanged: 0
+  uniqueMelee: 0
+  hasChargeAttack: 0
+  hasAimAttack: 0
+  projectilePrefab: {fileID: 7562811349553579978, guid: 8426e5512073ed84cb506889c9c51c7a, type: 3}
+  fireRate: 0.5
+  recoil: 0.5
+  baseDamage: 5
+  meleeDamage: 2
+  meleeSpeed: 0.64
+  projectileSpeed: 30
+  projectileRange: 0.93
+  knockback: 5
+  travelArc: 0
+  arcHeight: 2
+  arcRange: 10
+  penetration: 0
+  isAOE: 0
+  splashRadius: 2
+  chargeTime: 2
+  damageRange: {x: 10, y: 50}
+  rangeRange: {x: 0.9, y: 1}
+  speedRange: {x: 5, y: 25}
+  chargeEmit: 5
+  chargedFlash: 10
+  chargingClip: {fileID: 0}
+  chargingClipVolume: 1
+  chargedLoop: {fileID: 0}
+  chargedLoopVolume: 1
+  startTime: 0.5
+  aimWeight: 1
+  minPower: 5
+  maxPower: 20
+  powerRampTime: 2
+  aimMat: {fileID: 0}
+  aimEmit: 5
+  weaponAimClip: {fileID: 0}
+  weaponAimClipVolume: 1
+  aimObject: {fileID: 0}

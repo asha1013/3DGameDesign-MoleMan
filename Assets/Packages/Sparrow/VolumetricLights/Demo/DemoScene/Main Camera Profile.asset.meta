@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a8dd110bfa00ef54b9dbf2c7bf129f27
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/Sparrow/VolumetricLights/Demo/DemoScene/Main Camera Profile.asset
+  uploadId: 790192

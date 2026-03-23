@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: de61b777fe28c4b43a3b6ca4e897eeb0
+timeCreated: 1496029830
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 91686
+  packageName: Stylized Rocks
+  packageVersion: 1.2
+  assetPath: Assets/Rocks/README.txt
+  uploadId: 718649

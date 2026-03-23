@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 19c3ca5f7bd865842a27756a9d01af4d
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/Sparrow/VolumetricLights/Demo/DemoScene.unity
+  uploadId: 790192

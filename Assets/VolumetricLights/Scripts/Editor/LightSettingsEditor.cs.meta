@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 1654344d94a1cf54187654577aefe7c3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {fileID: 2800000, guid: e21639b5b150f314fa221146e8f8a197, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/Scripts/Editor/LightSettingsEditor.cs
+  uploadId: 790192

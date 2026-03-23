@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 91e4239af6426ad4ca5002e385023ade
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/Sparrow/VolumetricLights/Demo/DemoScene/Beam of Light Profile.asset
+  uploadId: 790192

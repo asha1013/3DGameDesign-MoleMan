@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f9cdceee4ceb89f4b92ba9ea40c038a5
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/Prefabs/construction_light.prefab
+  uploadId: 790192

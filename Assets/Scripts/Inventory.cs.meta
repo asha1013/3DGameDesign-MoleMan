@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fe0a7277b87cc964e9808825906066f6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - dungeonInventoryPanel: {instanceID: 0}
+  - persistentInventoryPanel: {instanceID: 0}
+  - inventorySlot: {fileID: 7727905986579776576, guid: 66c49892f9139f3448f1f4a9213e52cb, type: 3}
+  - pickupClip: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea8a637d6bee6b46b5c5cb8161fdba4, type: 3}
+  m_Name: EyeShroom
+  m_EditorClassIdentifier: 
+  mushroomName: MyteShroom
+  reagent: {fileID: 11400000, guid: ab9483ab063d89047b5a148701ab1dbe, type: 2}
+  growingMat: {fileID: 2100000, guid: 3dedbfb1dfc952b4a9b8498116ce2c43, type: 2}
+  grownMat: {fileID: 2100000, guid: a49ddf196c65054469c49c0f660e75f7, type: 2}
+  reqProgress: 3
+  color: {r: 1, g: 0.7827106, b: 0, a: 0}
+  rewardPrefab: {fileID: 4121818776991928236, guid: 3b51cc47424c2e2438ef561cbc5e0513, type: 3}

@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1102475590987062229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6888327433422433430}
+  - component: {fileID: 7791494515441684633}
+  m_Layer: 0
+  m_Name: DungeonBuilder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6888327433422433430
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102475590987062229}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.00091623125, w: 0.9999996}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.105}
+--- !u!114 &7791494515441684633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102475590987062229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef36485facf1674080d1ed22c14fdb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalRoom: {fileID: 11400000, guid: cd8c629df0047704099bd7ddd0a621a2, type: 2}
+  startRoom: {fileID: 11400000, guid: e704e92d6b4277c4cae15a769d4f136d, type: 2}
+  keyRoom: {fileID: 11400000, guid: d58d41defcb08d347bcbc548391662b1, type: 2}
+  bossRoom: {fileID: 11400000, guid: 954b43c4423771844b3470acb46ca005, type: 2}
+  additionalRoomTypes: []
+  hallwayPrefab: {fileID: 560443194186517310, guid: 18003c8948765244ba138fc620c2ec58, type: 3}
+  pathLength: 4
+  numberOfAddRooms: 3
+  numberOfExtRooms: 1
+  numberOfExtConnections: 2
+  generateOnStart: 1
+  minimapManager: {fileID: 0}
+  revealAllRooms: 0
+  showDebugGizmos: 0
+  gizmoSize: 1

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bd0dcfca16497a747ab0a0d0a1996d19
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/VolumetricLights/Shaders/VolumetricLight_Additive.mat
+  uploadId: 790192

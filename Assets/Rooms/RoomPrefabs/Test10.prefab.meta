@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+<<<<<<< Updated upstream
+<<<<<<<< Updated upstream:Assets/Rooms/RoomPrefabs/Test10.prefab.meta
+guid: 5f4e9f6694033254ba1789e9b16f632e
+PrefabImporter:
+========
+guid: 41995dffafea74fe19ec19ad965628d4
+DefaultImporter:
+>>>>>>>> Stashed changes:Assets/VolumetricLights/Shaders_Unity2022.unitypackage.meta
+=======
+<<<<<<<< HEAD:Assets/Rooms/RoomPrefabs/Test10.prefab.meta
+guid: 5f4e9f6694033254ba1789e9b16f632e
+PrefabImporter:
+========
+guid: 742b91efc74bd3348a5cef08749403f5
+DefaultImporter:
+>>>>>>>> 933e9e4de599405e62a1e209e56f959ba8628fef:Assets/UI/MolemanHUD.ai.meta
+>>>>>>> Stashed changes
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

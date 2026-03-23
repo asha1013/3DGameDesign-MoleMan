@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 657bf40d76fb075429d578dfdbe28150
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 333788
+  packageName: Volumetric Light System 2.0
+  packageVersion: 2.0
+  assetPath: Assets/Sparrow/VolumetricLights/Demo/DemoScene/Point Light Profile 7.asset
+  uploadId: 790192
